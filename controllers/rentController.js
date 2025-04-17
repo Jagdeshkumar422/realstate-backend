@@ -133,6 +133,7 @@ const createRent = asyncHandler(async (req, res) => {
       floor: req.body.floor,
       size: req.body.size,
       bedrooms: req.body.bedrooms,
+      WhatsAppNumber: req.body.WhatsAppNumber,
       bathrooms: req.body.bathrooms,
       parkings: req.body.parkings,
       unit_type: req.body.unit_type,

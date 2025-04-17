@@ -128,7 +128,7 @@ const createBuy = asyncHandler(async (req, res) => {
         availability: req.body.availability,
         price: req.body.price,
         address: req.body.address,
-        whatsapp_number: req.body.whatsapp_number
+        WhatsAppNumber: req.body.WhatsAppNumber
       });
 
       await property.save();

@@ -26,7 +26,11 @@ const buySchema = mongoose.Schema(
     image: [{ url: { type: String }, public_id: { type: String } }],
     location: {
       type: String,
-      default: "",
+      default:""
+    },
+    WhatsAppNumber: {
+      type: Number,
+      required: [true, "Please add a Whatsapp Number"],
     },
     floor: {
       type: Number,
@@ -94,9 +98,9 @@ const buySchema = mongoose.Schema(
     },
     address: {
       type: String,
-      default: "",
+      required: [true, "Please add a address"],
     },
-    whatsapp_number: {
+    WhatsAppNumber: {
       type: String,
       required: [true, "Please add a WhatsApp number"],
     },
